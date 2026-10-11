@@ -1,0 +1,41 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  gap: 0.5em;
+  font-size: 2em;
+  font-weight: 800;
+  justify-content: center;
+  padding: 1.5em;
+  min-height: 2em;
+  text-decoration: none;
+}
+
+.banner p {
+  margin: 0;
+}
+
+.banner:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.header {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  padding: 0.2em 0.5em;
+  background: #b50303;
+  color: white;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    padding: 1rem;
+    font-size: 1.125rem;
+  }
+}
