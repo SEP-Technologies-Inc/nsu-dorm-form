@@ -1,0 +1,8 @@
+dist
+node_modules
+public/fonts
+src/assets/documents
+
+**/.git
+**/.svn
+**/.hg

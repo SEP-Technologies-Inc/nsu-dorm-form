@@ -1,28 +1,28 @@
-import {Component, type ReactNode} from 'react';
+import { Component, type ReactNode } from 'react';
 
 type PDFErrorBoundaryProps = {
-    children: ReactNode;
-    fallback: ReactNode;
+  children: ReactNode;
+  fallback: ReactNode;
 };
 
 type PDFErrorBoundaryState = {
-    hasError: boolean;
+  hasError: boolean;
 };
 
 export class PDFErrorBoundary extends Component<PDFErrorBoundaryProps, PDFErrorBoundaryState> {
-    state: PDFErrorBoundaryState = {
-        hasError: false,
-    };
+  state: PDFErrorBoundaryState = {
+    hasError: false,
+  };
 
-    static getDerivedStateFromError(): PDFErrorBoundaryState {
-        return {hasError: true};
+  static getDerivedStateFromError(): PDFErrorBoundaryState {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return this.props.fallback;
     }
 
-    render() {
-        if (this.state.hasError) {
-            return this.props.fallback;
-        }
-
-        return this.props.children;
-    }
+    return this.props.children;
+  }
 }

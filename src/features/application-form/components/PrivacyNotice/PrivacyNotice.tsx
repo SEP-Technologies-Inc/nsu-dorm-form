@@ -6,5 +6,5 @@ export function PrivacyNotice() {
       Ваши персональные данные не отправляются нам и нигде не хранятся.{' '}
       <a href="https://github.com/SEP-Technologies-Inc/nsu-dorm-form">Убедитесь сами</a>
     </p>
-  )
+  );
 }

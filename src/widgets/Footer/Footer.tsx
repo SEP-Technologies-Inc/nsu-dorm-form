@@ -1,4 +1,4 @@
-import styles from './Footer.module.css'
+import styles from './Footer.module.css';
 
 export function Footer() {
   return (
@@ -7,5 +7,5 @@ export function Footer() {
         Made at <a href="https://sepcode.eu">SEP Technologies Inc.</a>, 2026
       </p>
     </footer>
-  )
+  );
 }

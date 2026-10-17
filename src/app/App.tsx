@@ -1,5 +1,5 @@
-import { ApplicationForm, PrivacyNotice } from '../features/application-form'
-import { Banner, Footer, Header } from '../widgets'
+import { ApplicationForm, PrivacyNotice } from '../features/application-form';
+import { Banner, Footer, Header } from '../widgets';
 
 export function App() {
   return (
@@ -7,13 +7,13 @@ export function App() {
       <Header />
 
       <main className="main">
-          <Banner />
-          <ApplicationForm />
+        <Banner />
+        <ApplicationForm />
       </main>
 
       <PrivacyNotice />
 
       <Footer />
     </div>
-  )
+  );
 }

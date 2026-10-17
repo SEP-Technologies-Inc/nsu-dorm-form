@@ -1,3 +1,5 @@
-import type {ApplicationFormData} from "./ApplicationFormData.ts";
+import type { ApplicationFormData } from './ApplicationFormData.ts';
 
-export type ApplicationFormErrors = Partial<Record<Exclude<keyof ApplicationFormData, 'overbureaucracy'>, string>>;
+export type ApplicationFormErrors = Partial<
+  Record<Exclude<keyof ApplicationFormData, 'overbureaucracy'>, string>
+>;

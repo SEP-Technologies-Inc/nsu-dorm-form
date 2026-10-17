@@ -1,19 +1,19 @@
 .privacyParagraph {
-    max-width: 42rem;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    color: var(--text-muted);
-    font-size: 0.875rem;
-    line-height: 1.6;
-    text-align: center;
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .privacyParagraph a {
-    color: var(--accent);
-    text-underline-offset: 0.2em;
+  color: var(--accent);
+  text-underline-offset: 0.2em;
 }
 
 .privacyParagraph a:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
