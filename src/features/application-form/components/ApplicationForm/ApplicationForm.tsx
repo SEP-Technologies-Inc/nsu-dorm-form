@@ -7,7 +7,7 @@ import {
 } from '../../lib/applicationForm.validation.ts';
 import type { ApplicationFormErrors } from '../../types/ApplicationFormErrors.ts';
 import { FieldError } from '../FieldError/FieldError.tsx';
-import { PDFErrorBoundary } from '../../../pdf-generation/components/PDFErrorBoundary/PDFErrorBoundary';
+import { PDFErrorBoundary, loadDownloadPdfButton } from '../../../pdf-generation';
 import { dormitoryAddress } from '../../constants/dormitoryAddress.constants.ts';
 import { splitDateRange } from '../../lib/applicationForm.dateRange.ts';
 import styles from './ApplicationForm.module.css';
@@ -29,13 +29,7 @@ const initialFormData: ApplicationFormData = {
   overbureaucracy: false,
 };
 
-const DownloadPdfButton = lazy(() =>
-  import('../../../pdf-generation/components/DownloadPdfButton/DownloadPdfButton.tsx').then(
-    (module) => ({
-      default: module.DownloadPdfButton,
-    }),
-  ),
-);
+const DownloadPdfButton = lazy(loadDownloadPdfButton);
 
 export function ApplicationForm() {
   const [formData, setFormData] = useState<ApplicationFormData>(initialFormData);
