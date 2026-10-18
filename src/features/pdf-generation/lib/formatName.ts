@@ -1,6 +1,6 @@
 import { incline } from 'lvovich';
 
-export function formatName(fullName: string) {
+export function formatName(fullName: string): string {
   const normalized = fullName.trim().replace(/\s+/g, ' ');
   const parts = normalized.split(' ');
 

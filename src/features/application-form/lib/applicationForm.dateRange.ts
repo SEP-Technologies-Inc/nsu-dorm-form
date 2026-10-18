@@ -33,7 +33,7 @@ function formatInputDate(date: Date) {
   return date.toISOString().slice(0, 10);
 }
 
-export function getAcademicPeriodId(value: string) {
+export function getAcademicPeriodId(value: string): string | null {
   const date = parseInputDate(value);
 
   if (!date) {
@@ -58,7 +58,7 @@ export function getAcademicPeriodId(value: string) {
   return `semester-1-${year}`;
 }
 
-export function isDateRangeWithinAcademicPeriod(start: string, end: string) {
+export function isDateRangeWithinAcademicPeriod(start: string, end: string): boolean {
   const startPeriod = getAcademicPeriodId(start);
   const endPeriod = getAcademicPeriodId(end);
 
