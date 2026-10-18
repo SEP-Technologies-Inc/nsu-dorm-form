@@ -9,6 +9,7 @@
 }
 
 .privacyParagraph a {
+  padding-left: 3pt;
   color: var(--accent);
   text-underline-offset: 0.2em;
 }
