@@ -1,8 +1,8 @@
 import { Document, Page, Text, View } from '@react-pdf/renderer';
-import type { ApplicationFormData } from '../../../application-form/types/ApplicationFormData.ts';
-import { facultyDirectory } from '../../../application-form/constants/facultyDirectory.constants.ts';
-import { dormitoryAddress } from '../../../application-form/constants/dormitoryAddress.constants.ts';
-import { formatName } from '../../lib/formatName.ts';
+import type { ApplicationFormData } from '@/features/application-form/types/ApplicationFormData.ts';
+import { facultyDirectory } from '@/features/application-form/constants/facultyDirectory.constants.ts';
+import { dormitoryAddress } from '@/features/application-form/constants/dormitoryAddress.constants.ts';
+import { formatName } from '@/features/pdf-generation/lib/formatName.ts';
 import { styles } from './PDFGenerator.styles.ts';
 
 type PDFGeneratorProps = {

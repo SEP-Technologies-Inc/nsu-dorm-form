@@ -1,5 +1,5 @@
-import type { ApplicationFormData } from '../types/ApplicationFormData.ts';
-import type { ApplicationFormErrors } from '../types/ApplicationFormErrors.ts';
+import type { ApplicationFormData } from '@/features/application-form/types/ApplicationFormData.ts';
+import type { ApplicationFormErrors } from '@/features/application-form/types/ApplicationFormErrors.ts';
 import { isDateRangeWithinAcademicPeriod } from './applicationForm.dateRange.ts';
 
 function normalizeText(value: string) {

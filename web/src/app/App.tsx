@@ -1,6 +1,6 @@
-import { ApplicationForm, PrivacyNotice } from '../features/application-form';
-import { Banner, Footer, Header } from '../widgets';
-import '../global.css';
+import { ApplicationForm, PrivacyNotice } from '@/features/application-form';
+import { Banner, Footer, Header } from '@/widgets';
+import '@/global.css';
 
 export function App() {
   return (

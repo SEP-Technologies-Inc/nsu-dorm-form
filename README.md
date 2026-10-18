@@ -1,7 +1,7 @@
 # Генератор заявлений на посещение общежития НГУ
 
 <p align="center">
-  <img src="./public/og-image-v2.png" alt="Пригласить гостя в общежитие НГУ" width="600">
+  <img src="./web/public/og-image-v2.png" alt="Пригласить гостя в общежитие НГУ" width="600">
 </p>
 
 <p align="center">
@@ -35,15 +35,17 @@
 ## Структура проекта
 
 ```text
-src/
-├── app/                         # Корневой компонент и глобальные стили
-├── features/
-│   ├── application-form/        # Форма, валидация, справочники
-│   └── pdf-generation/          # Разметка и создание PDF
-└── widgets/                     # Шапка, баннер и подвал
-server/
-└── stats/                       # Отдельный FastAPI-сервис сбора числа сгенерированных документов
-public/                          # Favicon и плашка сайта
+nsu-dorm-form/
+├───server/
+│    └── stats/                       # Отдельный FastAPI-сервис сбора числа сгенерированных документов
+└───web/
+     ├──src/
+     │   ├── app/                         # Корневой компонент и глобальные стили
+     │   ├── features/
+     │   │   ├── application-form/        # Форма, валидация, справочники
+     │   │   └── pdf-generation/          # Разметка и создание PDF
+     │   └── widgets/                     # Шапка, баннер и подвал
+     └──public/                           # Favicon и плашка сайта
 ```
 
 ## Локальный запуск
@@ -52,13 +54,8 @@ public/                          # Favicon и плашка сайта
 
 ```bash
 git clone https://github.com/SEP-Technologies-Inc/nsu-dorm-form.git
-cd nsu-dorm-form
+cd nsu-dorm-form/web
 npm ci
-```
-
-После этого запустите приложение:
-
-```bash
 npm run dev
 ```
 

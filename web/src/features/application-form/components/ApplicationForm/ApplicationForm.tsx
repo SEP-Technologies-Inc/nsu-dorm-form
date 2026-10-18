@@ -1,17 +1,17 @@
 import { lazy, Suspense, type ChangeEvent, type FormEvent, useState } from 'react';
-import type { ApplicationFormData } from '../../types/ApplicationFormData';
-import { faculties } from '../../constants/applicationForm.constants.ts';
+import type { ApplicationFormData } from '@/features/application-form/types/ApplicationFormData';
+import { faculties } from '@/features/application-form/constants/applicationForm.constants.ts';
 import {
   normalizeApplicationFormData,
   validateApplicationForm,
-} from '../../lib/applicationForm.validation.ts';
-import type { ApplicationFormErrors } from '../../types/ApplicationFormErrors.ts';
-import { FieldError } from '../FieldError/FieldError.tsx';
-import { PDFErrorBoundary, loadDownloadPdfButton } from '../../../pdf-generation';
-import { dormitoryAddress } from '../../constants/dormitoryAddress.constants.ts';
-import { splitDateRange } from '../../lib/applicationForm.dateRange.ts';
+} from '@/features/application-form/lib/applicationForm.validation.ts';
+import type { ApplicationFormErrors } from '@/features/application-form/types/ApplicationFormErrors.ts';
+import { FieldError } from '@/features/application-form/components/FieldError/FieldError.tsx';
+import { PDFErrorBoundary, loadDownloadPdfButton } from '@/features/pdf-generation';
+import { dormitoryAddress } from '@/features/application-form/constants/dormitoryAddress.constants.ts';
+import { splitDateRange } from '@/features/application-form/lib/applicationForm.dateRange.ts';
 import styles from './ApplicationForm.module.css';
-import { recordGeneratedDocuments } from '../../api/recordGeneratedDocuments.ts';
+import { recordGeneratedDocuments } from '@/features/application-form/api/recordGeneratedDocuments.ts';
 
 const initialFormData: ApplicationFormData = {
   faculty: '',

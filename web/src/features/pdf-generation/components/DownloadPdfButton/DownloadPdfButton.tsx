@@ -1,8 +1,8 @@
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import './DownloadPdfButton.module.css';
 
-import type { ApplicationFormData } from '../../../application-form/types/ApplicationFormData.ts';
-import { PDFGenerator } from '../PDFGenerator/PDFGenerator.tsx';
+import type { ApplicationFormData } from '@/features/application-form/types/ApplicationFormData.ts';
+import { PDFGenerator } from '@/features/pdf-generation/components/PDFGenerator/PDFGenerator.tsx';
 import styles from './DownloadPdfButton.module.css';
 
 type DownloadPdfButtonProps = {
