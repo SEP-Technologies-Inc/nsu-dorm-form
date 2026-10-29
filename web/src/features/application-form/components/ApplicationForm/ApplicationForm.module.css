@@ -33,7 +33,6 @@ h1 {
   font-weight: 700;
 }
 
-.requiredMark,
 .requiredHint span {
   color: var(--error);
 }
@@ -42,17 +41,6 @@ h1 {
   margin: 0 0 1rem;
   font-size: 0.875rem;
   color: var(--text);
-}
-
-.inputBlock {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  gap: 0.7em;
-}
-
-.inputBlock label {
-  font-weight: 600;
 }
 
 .form input:not([type='checkbox']),

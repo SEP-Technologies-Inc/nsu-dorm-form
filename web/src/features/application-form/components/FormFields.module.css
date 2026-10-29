@@ -1,0 +1,14 @@
+.requiredMark {
+  color: var(--error);
+}
+
+.inputBlock {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.inputBlock label {
+  font-weight: 600;
+}

@@ -1,15 +1,7 @@
-export type ApplicationFormData = {
-  faculty: string;
-  course: number | '';
-  name: string;
-  group: string;
-  dormitory: string;
-  room: string;
-  tel: string;
-  guest: string;
-  relationship: string;
-  start: string;
-  end: string;
-  roommates: string[];
-  overbureaucracy: boolean;
-};
+import type { z } from 'zod';
+
+import type { applicationFormSchema } from '@/features/application-form/lib/applicationForm.schema';
+
+export type ApplicationFormInput = z.input<typeof applicationFormSchema>;
+
+export type ApplicationFormData = z.output<typeof applicationFormSchema>;
